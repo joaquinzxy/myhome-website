@@ -6,7 +6,7 @@
 }
 
 .big-header{
-    background-image: url('/img/main-background.jpg');
+    background-image: url('../img/main-background.jpg');
     background-position: 150% 100%; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: contain; /* Resize the background image to cover the entire container */
