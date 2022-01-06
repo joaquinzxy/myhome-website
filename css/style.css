@@ -451,3 +451,10 @@ section.latest-section>.button-container{
         width: 75%;
     }
 }
+
+@media (max-width: 520px) {
+    .big-header{
+        background-position: 10px 100%; /* Center the image */
+        background-size: cover;
+    }
+}
