@@ -115,7 +115,7 @@ header .whatsapp-btn{
 }
 
 main{
-    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
     padding: 2% 20% 2% 10%;
     display: flex;
     flex-direction: column;
@@ -361,7 +361,7 @@ section.latest-section>.button-container{
     }
 
     main{
-        height: calc(100vh - 100px);
+        height: auto;
         padding: 5%;
         display: flex;
         flex-direction: column;
@@ -369,7 +369,7 @@ section.latest-section>.button-container{
     }
 
     header .mainLogo{
-        width: 50%;
+        width: 80%;
         padding-left: 40px;
         z-index: 2;
     }
@@ -394,7 +394,7 @@ section.latest-section>.button-container{
     }
 
     section.featured-section > .cards-display .prop-card {
-        width: 80%;
+        width: 100%;
         margin: 15px auto;
     }
 
