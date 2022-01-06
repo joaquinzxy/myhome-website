@@ -1,0 +1,453 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.big-header{
+    background-image: url('/img/main-background.jpg');
+    background-position: 150% 100%; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: contain; /* Resize the background image to cover the entire container */
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+header .mainLogo{
+    display: flex;
+    justify-items: center;
+    width: 20%;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
+header .mainLogo img{
+    height: 35px;
+    width: 35px;
+    margin: 0 5px;
+}
+
+header .mainLogo h1{
+    font-size: 2em;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+nav ul li{
+    display:inline;
+    margin: 0 10px;
+}
+
+
+header .burger-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+header .burger-container span {
+    width: 100%;
+    height: 3px;
+    position: relative;
+    background-color: #009ff9;
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+header .burger-container.open .line1{
+    transform: rotate(45deg);
+}
+
+header .burger-container.open .line2{
+    display: none;
+}
+
+header .burger-container.open .line3{
+    transform: rotate(-45deg);
+}
+
+header a.nav-btn{
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(46, 46, 46);
+    border-bottom: 3px solid rgba(255, 255, 255, 0);
+}
+
+header a.nav-btn.active, header a.nav-btn:hover{
+    color: black;
+    border-bottom: 3px solid #0084ff;
+    transition: border 0.8s ease;
+}
+
+header .whatsapp-btn{
+    background-color: rgb(46, 228, 70);
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+main{
+    height: calc(100vh - 100px);
+    padding: 2% 20% 2% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main p{
+    font-size: 17px;
+    margin: 0;
+    padding-right: 30%;
+}
+
+h1{
+    font-size: 3em;
+    font-weight: 600;
+}
+
+h2{
+    font-size: 2em;
+    font-weight: 600;
+}
+
+p{
+    color: rgb(78, 78, 78);
+    margin-top: 20px;
+    line-height: 1.5em;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.hl-text{
+    color: #0084ff;
+}
+
+main .main-btn{
+    background-color: rgb(0, 132, 255);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+main .searchbox{
+    display: flex;
+    padding: 20px;
+    width: fit-content;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    align-items: center;
+}
+
+.squared-btn{
+    background-color: rgb(0, 132, 255);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+main .searchbox .selector{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    padding-left: 20px;
+    border-left: 1px solid rgba(175, 175, 175, 0.35);
+}
+
+main .searchbox .selector:nth-child(1){
+    border-left: 0px;
+    padding-left: 0;
+}
+
+main .searchbox .selector label{
+    color: #8d8d8d;
+}
+
+
+main .searchbox .selector select{
+    padding: 10px 10px 10px 0px;
+    border: 0;
+    font-size: 18px;
+}
+
+main .searchbox .selector select:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+section{
+    padding: 5% 10%;
+    width: 100%;
+}
+
+section.featured-section, section.how-it-works-section{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.cards-display{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+section.featured-section > p{
+    margin-right: 35%;
+}
+
+section .prop-card{
+    height: fit-content;
+    text-align: left;
+    width: 30%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.103) 0px 5px 15px;
+}
+
+section .prop-card .card-header img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+section .prop-card .card-footer>*{
+    margin-top: 5px;
+}
+
+section .prop-card h4{
+    font-size: 1.5em;
+}
+
+section.how-it-works-section{
+    background-color: #0084ff;
+}
+
+section.how-it-works-section>p, section.how-it-works-section>h2{
+    color: white;
+}
+
+section.how-it-works-section h2, section.how-it-works-section > p{
+    text-align: center;
+    margin: 10px 10%;
+}
+
+section.how-it-works-section .icons-display{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section.how-it-works-section .icon-showcase{
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.103) 0px 5px 15px;
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+    background-color: white;
+}
+
+section.how-it-works-section .icon-showcase .card-header{
+    display: flex;
+    font-size: 20px;
+}
+
+section.how-it-works-section .icon-showcase .card-header .icon-container{
+    background-color: rgb(0, 132, 255);
+    padding: 5px;
+    border-radius: 5px;
+    width: 15%;
+    margin-right: 10px;
+}
+
+section.how-it-works-section .icon-showcase .card-header .icon-container img{
+    width: 100%;
+}
+
+section.how-it-works-section .icon-showcase .card-header .card-title{
+    width: 85%;
+}
+
+section.how-it-works-section .icon-showcase .card-body p{
+    text-align: left;
+}
+
+section.latest-section{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+section.latest-section>.button-container{
+    padding-top: 70px;
+}
+
+@media (max-width: 1024px) {
+    .big-header{
+        background-position: 450px 100%; /* Center the image */
+    }
+
+    header{
+        padding: 0;
+    }
+
+    header .burger-container{
+        margin-right: 20px;
+        z-index: 3;
+        display: flex;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;        
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ul li{
+        padding: 20px 0;
+    }
+
+    nav.hidden{
+        top: -100%;
+    }
+
+    main{
+        height: calc(100vh - 100px);
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    header .mainLogo{
+        width: 50%;
+        padding-left: 40px;
+        z-index: 2;
+    }
+    
+    main p{
+        font-size: 17px;
+        margin: 0;
+        padding-right: 20%;
+    }
+    
+    section.featured-section{
+        text-align: center;
+    }
+
+    section.featured-section > p {
+        margin-right: 0;
+    }
+
+    section.featured-section > .cards-display{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section.featured-section > .cards-display .prop-card {
+        width: 80%;
+        margin: 15px auto;
+    }
+
+    section.how-it-works-section .icon-showcase{
+        width: 47%;
+    }
+
+    section.latest-section > .cards-display > .prop-card {
+        width: 43%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    h1{
+        font-size: 2.0em;
+    }
+
+    .big-header{
+        background-position: 150px 100%; /* Center the image */
+        background-size: cover;
+    }
+
+    main p{
+        padding-right: 10%;
+    }
+
+    main > .searchbox{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    main > .searchbox .selector{
+        width: 45%;
+        margin-top: 10px;
+        padding-left: 0;
+        border: 0;
+    }
+
+    section.how-it-works-section{
+        padding: 5% 5%;
+    }
+
+    section.how-it-works-section .icon-showcase{
+        width: 49%;
+    }
+
+    section.how-it-works-section .icon-showcase .card-header .icon-container{
+        width: 25%;
+    }
+    
+    section.how-it-works-section .icon-showcase .card-header .card-title{
+        width: 75%;
+    }
+}
