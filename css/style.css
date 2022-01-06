@@ -457,4 +457,13 @@ section.latest-section>.button-container{
         background-position: 10px 100%; /* Center the image */
         background-size: cover;
     }
+
+    section.how-it-works-section .icons-display {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.how-it-works-section .icons-display .icon-showcase{
+        width: 80%;
+    }
 }
