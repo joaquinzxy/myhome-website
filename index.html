@@ -23,9 +23,9 @@
             <nav id="main-nav" class="hidden">
               <ul>
                 <li><a href="#" class="nav-btn active">INICIO</a></li>
-                <li><a href="#" class="nav-btn">PROPIEDADES</a></li>
-                <li><a href="#" class="nav-btn">NOSOTROS</a></li>
-                <li><a href="#" class="nav-btn">CONTACTO</a></li>
+                <li><a href="properties.html" class="nav-btn">PROPIEDADES</a></li>
+                <li><a href="about.html" class="nav-btn">NOSOTROS</a></li>
+                <li><a href="contact.html" class="nav-btn">CONTACTO</a></li>
               </ul>
               <a href="#" class="whatsapp-btn">WHATSAPP</a>
             </nav>
@@ -35,7 +35,7 @@
                 <span class="line3"></span>
             </div>
           </header>
-          <main>
+          <main class="hero">
             <h1>Encontrá tu <span class="hl-text">hogar soñado</span>, a un click de distancia.</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut nostrum quis
@@ -46,12 +46,7 @@
             <div class="searchbox">
               <div class="barrio-selector selector">
                 <label for="">Barrio</label>
-                <select name="" id="">
-                  <option value="mvd">Montevideo</option>
-                  <option value="mvd">Maldonado</option>
-                  <option value="mvd">Canelones</option>
-                  <option value="mvd">Lavalleja</option>
-                  <option value="mvd">San José</option>
+                <select name="location-selector" id="location-select">
                 </select>
               </div>
               <div class="tipo-selector selector">
@@ -75,37 +70,7 @@
     <section class="featured-section">
         <h2>Las propiedades más <span class="hl-text">destacadas</span></h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quisquam voluptatum ab. Omnis possimus ratione ea magnam odit maiores, maxime dolore iure quae dolores! Laborum ea omnis odit non accusantium!</p>
-        <div class="cards-display">
-            <a href='#' class="prop-card">
-                <div class="card-header">
-                    <img src="img/property-thumb-1.jpg" alt="">
-                </div>
-                <div class="card-footer">
-                    <h4 class="hl-text">$12.600</h4>
-                    <h3>La mejor vista de la costa.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </a>
-            <a href='#' class="prop-card">
-                <div class="card-header">
-                    <img src="img/property-thumb-2.jpg" alt="">
-                </div>
-                <div class="card-footer">
-                    <h4 class="hl-text">$12.600</h4>
-                    <h3>La mejor vista de la costa.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </a>
-            <a href='#' class="prop-card">
-                <div class="card-header">
-                    <img src="img/property-thumb-3.jpg" alt="">
-                </div>
-                <div class="card-footer">
-                    <h4 class="hl-text">$12.600</h4>
-                    <h3>La mejor vista de la costa.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </a>
+        <div class="cards-display" id="featured-container">
         </div>
     </section> 
     <section class="how-it-works-section">
@@ -171,72 +136,13 @@
     <section class="latest-section">
         <h2>Propiedades añadidas <span class="hl-text">recientemente</span></h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quisquam voluptatum ab. Omnis possimus ratione ea magnam odit maiores, maxime dolore iure quae dolores! Laborum ea omnis odit non accusantium!</p>
-        <div class="cards-display">
-            <a href='#' class="prop-card">
-                <div class="card-header">
-                    <img src="img/property-thumb-1.jpg" alt="">
-                </div>
-                <div class="card-footer">
-                    <h4 class="hl-text">$12.600</h4>
-                    <h3>La mejor vista de la costa.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </a>
-            <a href='#' class="prop-card">
-                <div class="card-header">
-                    <img src="img/property-thumb-2.jpg" alt="">
-                </div>
-                <div class="card-footer">
-                    <h4 class="hl-text">$12.600</h4>
-                    <h3>La mejor vista de la costa.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </a>
-            <a href='#' class="prop-card">
-                <div class="card-header">
-                    <img src="img/property-thumb-3.jpg" alt="">
-                </div>
-                <div class="card-footer">
-                    <h4 class="hl-text">$12.600</h4>
-                    <h3>La mejor vista de la costa.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </a>
-            <a href='#' class="prop-card">
-                <div class="card-header">
-                    <img src="img/property-thumb-1.jpg" alt="">
-                </div>
-                <div class="card-footer">
-                    <h4 class="hl-text">$12.600</h4>
-                    <h3>La mejor vista de la costa.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </a>
-            <a href='#' class="prop-card">
-                <div class="card-header">
-                    <img src="img/property-thumb-2.jpg" alt="">
-                </div>
-                <div class="card-footer">
-                    <h4 class="hl-text">$12.600</h4>
-                    <h3>La mejor vista de la costa.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </a>
-            <a href='#' class="prop-card">
-                <div class="card-header">
-                    <img src="img/property-thumb-3.jpg" alt="">
-                </div>
-                <div class="card-footer">
-                    <h4 class="hl-text">$12.600</h4>
-                    <h3>La mejor vista de la costa.</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                </div>
-            </a>
+        <div class="cards-display" id="latest-container">
         </div>
         <div class="button-container">
             <a href="#" class="squared-btn">CARGAR MÁS</a>
         </div>
     </section> 
+    <script src="js/init.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

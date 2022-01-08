@@ -22,6 +22,13 @@ header{
     padding: 20px 40px;
 }
 
+header.sticky-header{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgba(175, 175, 175, 0.35);
+}
+
 header .mainLogo{
     display: flex;
     justify-items: center;
@@ -114,7 +121,7 @@ header .whatsapp-btn{
     color: rgb(255, 255, 255);
 }
 
-main{
+main.hero{
     min-height: calc(100vh - 100px);
     padding: 2% 20% 2% 10%;
     display: flex;
@@ -122,7 +129,14 @@ main{
     justify-content: space-around;
 }
 
-main p{
+main.with-aside{
+    padding: 0% 5% 0% 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+main > p{
     font-size: 17px;
     margin: 0;
     padding-right: 30%;
@@ -162,13 +176,22 @@ main .main-btn{
     font-weight: 600;
 }
 
-main .searchbox{
+.searchbox{
     display: flex;
     padding: 20px;
     width: fit-content;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     align-items: center;
+    position: fixed;
+}
+
+aside .searchbox{
+    flex-direction: column;
+    align-items:flex-start;
+    min-height: calc(100vh - 100px);
+    box-shadow: rgba(9, 255, 0, 0) 0px 5px 15px;
+    border-right: 1px solid rgba(175, 175, 175, 0.35);
 }
 
 .squared-btn{
@@ -179,7 +202,7 @@ main .searchbox{
     font-weight: 400;
 }
 
-main .searchbox .selector{
+.searchbox .selector{
     display: flex;
     flex-direction: column;
     margin: 0 10px;
@@ -187,29 +210,45 @@ main .searchbox .selector{
     border-left: 1px solid rgba(175, 175, 175, 0.35);
 }
 
-main .searchbox .selector:nth-child(1){
+aside .searchbox .selector{
+    margin: 0;
+    padding-left: 0;
+    border-left: 0;
+    width: 100%;
+}
+
+.searchbox .selector:nth-child(1){
     border-left: 0px;
     padding-left: 0;
 }
 
-main .searchbox .selector label{
+.searchbox .selector label{
     color: #8d8d8d;
 }
 
 
-main .searchbox .selector select{
+.searchbox .selector select{
     padding: 10px 10px 10px 0px;
     border: 0;
     font-size: 18px;
 }
 
-main .searchbox .selector select:focus-visible {
+.searchbox .selector select:focus-visible {
     outline: -webkit-focus-ring-color auto 0px;
+}
+
+aside{
+    width: 15%;
 }
 
 section{
     padding: 5% 10%;
     width: 100%;
+}
+
+section.properties-section{
+    width: 85%;
+    padding: 20px 5%;
 }
 
 section.featured-section, section.how-it-works-section{
@@ -323,8 +362,13 @@ section.latest-section>.button-container{
         background-position: 450px 100%; /* Center the image */
     }
 
+    header.sticky-header {
+        position: initial;
+
+    }
+
     header{
-        padding: 0;
+        padding: 0px;
     }
 
     header .burger-container{
@@ -374,7 +418,7 @@ section.latest-section>.button-container{
         z-index: 2;
     }
     
-    main p{
+    main > p{
         font-size: 17px;
         margin: 0;
         padding-right: 20%;
@@ -410,6 +454,11 @@ section.latest-section>.button-container{
 
 @media (max-width: 768px) {
 
+    header.sticky-header {
+        position: initial;
+
+    }
+
     h1{
         font-size: 2.0em;
     }
@@ -419,7 +468,7 @@ section.latest-section>.button-container{
         background-size: cover;
     }
 
-    main p{
+    main > p{
         padding-right: 10%;
     }
 
@@ -456,6 +505,10 @@ section.latest-section>.button-container{
     .big-header{
         background-position: 10px 100%; /* Center the image */
         background-size: cover;
+    }
+    header.sticky-header {
+        position: initial;
+
     }
 
     section.how-it-works-section .icons-display {
