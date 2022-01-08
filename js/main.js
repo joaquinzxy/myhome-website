@@ -1,10 +1,6 @@
 let featuredQuantity = 3;
 let latestQuantity = 6;
 
-let locationSelector = document.getElementById("location-select")
-let featuredContainer = document.getElementById("featured-container");
-let latestContainer = document.getElementById("latest-container")
-
 function showFeatured(array, quantity){
     let featuredHouses = array.filter(house => house.highlight == "true")
     if(featuredHouses.length>quantity && quantity>0){

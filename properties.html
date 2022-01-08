@@ -35,7 +35,7 @@
             </div>
           </header>
     <main class="with-aside">
-        <aside>
+        <aside class="hidden">
             <div class="searchbox">
                 <div class="barrio-selector selector">
                   <label for="">Barrio</label>
@@ -84,9 +84,10 @@
                       <option value="mvd">Apartamento</option>
                     </select> 
                 </div>
-                <a href="#" class="squared-btn">BUSCAR</a>
+                <a href="#" id="search-button" class="squared-btn">BUSCAR</a>
             </div>
-        </aside>
+          </aside>
+          <span class="filter-button" id="filter-button"><img src="img/icons/filter.png" alt=""></span>
         <section class="properties-section">
             <h2>Resultado de la <span class="hl-text">busqueda</span></h2>
             <div class="cards-display" id="properties-container">
