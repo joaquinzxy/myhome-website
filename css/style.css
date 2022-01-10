@@ -131,7 +131,7 @@ main.hero{
 }
 
 main.with-aside{
-    padding: 0% 5% 0% 0%;
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -275,7 +275,7 @@ section{
 
 section.properties-section{
     width: 85%;
-    padding: 20px 5%;
+    padding: 20px 3%;
 }
 
 section.featured-section, section.how-it-works-section{
@@ -386,7 +386,7 @@ section.latest-section>.button-container{
 
 @media (max-width: 1024px) {
     .big-header{
-        background-position: 450px 100%; /* Center the image */
+        background-position: 250px 100%; /* Center the image */
     }
 
 
@@ -501,7 +501,7 @@ section.latest-section>.button-container{
     }
 
     .big-header{
-        background-position: 150px 100%; /* Center the image */
+        background-position: 50px 100%; /* Center the image */
         background-size: cover;
     }
 
@@ -538,12 +538,20 @@ section.latest-section>.button-container{
     }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 650px) {
     .big-header{
-        background-position: 10px 100%; /* Center the image */
+        background-position: 0 100%; /* Center the image */
         background-size: cover;
     }
 
+    .hero > .searchbox{
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .hero > .searchbox .selector{
+        width: 100%;
+    }
 
     section.how-it-works-section .icons-display {
         flex-direction: column;
