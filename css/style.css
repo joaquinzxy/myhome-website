@@ -190,8 +190,9 @@ main .main-btn{
 
 aside .searchbox{
     flex-direction: column;
+    justify-content: space-between;
     align-items:flex-start;
-    min-height: 100vh;
+    min-height: calc(100vh - 100px);
     box-shadow: rgba(9, 255, 0, 0) 0px 5px 15px;
     border-right: 1px solid rgba(175, 175, 175, 0.35);
     position: fixed;
