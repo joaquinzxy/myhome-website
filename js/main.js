@@ -23,6 +23,18 @@ function showLatest(array, quantity){
     printHouses(latestHouses, latestContainer)
 }
 
+let locationFilter = document.getElementById("location-select")
+let typeFilter = document.getElementById("type-select")
+let priceFilter = document.getElementById("price-select")
+
+
+function dataToFilter(){
+    let location = locationFilter.value;
+    let category = typeFilter.value;
+    let price = priceFilter.value;
+    window.location.href = `/properties.html?location=${location}&category=${category}&price=${price}`;
+}
+
 document.addEventListener('DOMContentLoaded', async function(){
     let casas = await getHouses(housesJson)
     showFeatured(casas, featuredQuantity)

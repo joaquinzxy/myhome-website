@@ -12,18 +12,43 @@ function showAllProperties(){
 
 //Filters functions
 function filterByLocation(housesArray, locationStr){
-    let result = housesArray.filter(house=> strFormat(house.location) == strFormat(locationStr))
-    return result;
+    if(locationStr!="all"){
+        let result = housesArray.filter(house=> strFormat(house.location) == strFormat(locationStr))
+        return result
+    } else {
+        return housesArray;
+    }
 }
 
 function filterByCategory(housesArray, categoryStr){
-    let result = housesArray.filter(house=> strFormat(house.category) == strFormat(categoryStr))
-    return result;
+    console.log(typeof(housesArray))
+    if(categoryStr!="all"){
+        let result = housesArray.filter(house=> strFormat(house.category) == strFormat(categoryStr))
+        return result
+    } else {
+        return housesArray
+    }
 }
 
 function filterByPrice(housesArray, priceRange){
-    let result = housesArray.filter(house=> parseInt(house.price)>priceRange[0] && parseInt(house.price)<priceRange[1])
-    return result;
+    if(priceRange!="all"){
+        let result = housesArray.filter(house=> parseInt(house.price)>priceRange[0] && parseInt(house.price)<priceRange[1])
+        return result
+    } else {
+        return housesArray
+    }
+}
+
+let locationFilter = document.getElementById("location-select")
+let typeFilter = document.getElementById("type-select")
+let priceFilter = document.getElementById("price-select")
+
+function executeFilter(){
+    let locationResult = filterByLocation(houses, locationFilter.value)
+    let typeResult = filterByCategory(Object.values(locationResult), typeFilter.value)
+    let finalResult = typeResult
+    printHouses(finalResult, propertiesContainer)
+    return finalResult
 }
 
 sectionContainer.addEventListener('click', function(){

@@ -56,19 +56,3 @@ function printHouses(array, canva){
 const priceFormat  = price => "$"+(price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "."));
 const strFormat = str => (str.normalize("NFD").replace(/[\u0300-\u036f]/g, "")).toLowerCase();
 
-
-//Filters functions
-function filterByLocation(housesArray, locationStr){
-    let result = housesArray.filter(house=> strFormat(house.location) == strFormat(locationStr))
-    return result;
-}
-
-function filterByCategory(housesArray, categoryStr){
-    let result = housesArray.filter(house=> strFormat(house.category) == strFormat(categoryStr))
-    return result;
-}
-
-function filterByPrice(housesArray, priceRange){
-    let result = housesArray.filter(house=> parseInt(house.price)>priceRange[0] && parseInt(house.price)<priceRange[1])
-    return result;
-}
