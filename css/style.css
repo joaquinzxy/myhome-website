@@ -414,6 +414,50 @@ section.latest-section>.button-container{
     cursor: pointer;
 }
 
+.underline-primary{
+    width: 10%;
+    height: 5px;
+    background-color: #0084ff;
+}
+
+section.about-us{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+section.about-us > .underline-primary{
+    margin: 15px auto;
+}
+
+section.about-us .team-about{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+section.about-us .team-about .worker-card{
+    width: 24%;
+    margin: 15px 0%;
+    background-color: #0084ff;
+    color: white;
+    cursor: pointer;
+}
+
+section.about-us .team-about .worker-card img{
+    width: 100%;
+}
+
+section.about-us .team-about .worker-card p{
+    margin-top: 2px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+
 @media (max-width: 1024px) {
     .big-header{
         background-position: 250px 100%; /* Center the image */

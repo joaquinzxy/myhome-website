@@ -64,6 +64,10 @@ function executeFilter(location = "all", category = "all", price = [0, 99999999]
 }
 
 function resetFilter(){
+    locationFilter.value = 'all';
+    typeFilter.value = 'all';
+    minPriceFilter.value = "" 
+    maxPriceFilter.value = ""
     executeFilter()
 }
 

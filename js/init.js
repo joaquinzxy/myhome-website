@@ -55,7 +55,7 @@ function printHouses(array, canva){
                 <div class="no-results">
                     <h3>Lo sentimos, no hay propiedades que coincidan con la búsqueda :(</h3>
                     <div>
-                        <a class="squared-btn" id="reset-filter-btn">RESETEAR FILTRO</a>
+                        <a class="squared-btn" onclick="resetFilter()">RESETEAR FILTRO</a>
                     </div>
                 </div>
             `
