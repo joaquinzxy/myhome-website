@@ -26,14 +26,18 @@ function showLatest(array, quantity){
 let locationFilter = document.getElementById("location-select")
 let typeFilter = document.getElementById("type-select")
 let priceFilter = document.getElementById("price-select")
-
+let filterButton = document.getElementById("filter-button")
 
 function dataToFilter(){
     let location = locationFilter.value;
     let category = typeFilter.value;
     let price = priceFilter.value;
-    window.location.href = `/properties.html?location=${location}&category=${category}&price=${price}`;
+    window.location.href = `/properties.html?search&location=${location}&category=${category}&price=${price}&`;
 }
+
+filterButton.addEventListener('click', function(){
+    dataToFilter();
+})
 
 document.addEventListener('DOMContentLoaded', async function(){
     let casas = await getHouses(housesJson)

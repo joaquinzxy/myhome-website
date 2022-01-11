@@ -14,80 +14,61 @@
     <title>MyHome - Propiedades</title>
   </head>
   <body>
-        <header class="sticky-header">
-            <a class="mainLogo" href="#">
-                <img src="img/house.png" alt=""/>
-                <h1>MY HOME</h1>
-            </a>
-            <nav id="main-nav" class="hidden">
-              <ul>
-                <li><a href="index.html" class="nav-btn">INICIO</a></li>
-                <li><a href="properties.html" class="nav-btn active">PROPIEDADES</a></li>
-                <li><a href="about.html" class="nav-btn">NOSOTROS</a></li>
-                <li><a href="contact.html" class="nav-btn">CONTACTO</a></li>
-              </ul>
-              <a href="#" class="whatsapp-btn">WHATSAPP</a>
-            </nav>
-            <div id="burger" class="burger-container">
-                <span class="line1"></span>
-                <span class="line2"></span>
-                <span class="line3"></span>
-            </div>
-          </header>
+    <header class="sticky-header">
+      <a class="mainLogo" href="#">
+        <img src="img/house.png" alt="" />
+        <h1>MY HOME</h1>
+      </a>
+      <nav id="main-nav" class="hidden">
+        <ul>
+          <li><a href="index.html" class="nav-btn">INICIO</a></li>
+          <li>
+            <a href="properties.html" class="nav-btn active">PROPIEDADES</a>
+          </li>
+          <li><a href="about.html" class="nav-btn">NOSOTROS</a></li>
+          <li><a href="contact.html" class="nav-btn">CONTACTO</a></li>
+        </ul>
+        <a href="#" class="whatsapp-btn">WHATSAPP</a>
+      </nav>
+      <div id="burger" class="burger-container">
+        <span class="line1"></span>
+        <span class="line2"></span>
+        <span class="line3"></span>
+      </div>
+    </header>
     <main class="with-aside">
-        <aside class="hidden">
-            <div class="searchbox">
-                <div class="barrio-selector selector">
-                  <label for="location-selector">Barrio</label>
-                  <select name="location-selector" id="location-select">
-                      <option value="all">Todos</option>
-                  </select>
-                </div>
-                <div class="tipo-selector selector">
-                    <label for="type-selector">Tipo</label>
-                    <select name="type-selector" id="type-select">
-                        <option value="all">Todos</option>
-                        <option value="casa">Casa</option>
-                        <option value="apartamento">Apartamento</option>
-                    </select> 
-                </div>
-                <div class="precio-selector selector">
-                    <label for="price-selector">Rango de precio</label>
-                    <select name="price-selector" id="price-select">
-                      <option value="mvd">Casa</option>
-                      <option value="mvd">Apartamento</option>
-                    </select> 
-                </div>
-                <div class="precio-selector selector">
-                    <label for="">Rango de precio</label>
-                    <select name="" id="">
-                      <option value="mvd">Casa</option>
-                      <option value="mvd">Apartamento</option>
-                    </select> 
-                </div>
-                <div class="precio-selector selector">
-                    <label for="">Rango de precio</label>
-                    <select name="" id="">
-                      <option value="mvd">Casa</option>
-                      <option value="mvd">Apartamento</option>
-                    </select> 
-                </div>
-                <div class="precio-selector selector">
-                    <label for="">Rango de precio</label>
-                    <select name="" id="">
-                      <option value="mvd">Casa</option>
-                      <option value="mvd">Apartamento</option>
-                    </select> 
-                </div>
-                <a href="#" id="search-button" class="squared-btn">BUSCAR</a>
-            </div>
-          </aside>
-          <span class="filter-button" id="filter-button"><img src="img/icons/filter.png" alt=""></span>
-        <section class="properties-section"  id="section-container">
-            <h2>Resultado de la <span class="hl-text">busqueda</span></h2>
-            <div class="cards-display" id="properties-container">
-            </div>
-        </section>
+      <aside class="hidden">
+        <div class="searchbox">
+          <div class="barrio-selector selector">
+            <label for="location-selector">Barrio</label>
+            <select name="location-selector" id="location-select">
+              <option value="all">Todos</option>
+            </select>
+          </div>
+          <div class="tipo-selector selector">
+            <label for="type-selector">Tipo</label>
+            <select name="type-selector" id="type-select">
+              <option value="all">Todos</option>
+              <option value="casa">Casa</option>
+              <option value="apartamento">Apartamento</option>
+            </select>
+          </div>
+          <div class="price-selector selector">
+            <label for="price-selector">Rango de precio</label>
+            <input type="number" class="price-selector-input" placeholder="Mínimo" id="price-select-min"/>
+            <input type="number" class="price-selector-input" placeholder="Máximo" id="price-select-max"/>
+          </div>
+          <a href="#" id="search-button" class="squared-btn">BUSCAR</a>
+        </div>
+      </aside>
+      <span class="filter-button" id="filter-button"
+        ><img src="img/icons/filter.png" alt=""
+      /></span>
+      <section class="properties-section" id="section-container">
+        <h2>Resultado de la <span class="hl-text">busqueda</span>:</h2>
+        <div class="cards-display" id="properties-container">
+        </div>
+      </section>
     </main>
     <script src="js/init.js"></script>
     <script src="js/properties.js"></script>

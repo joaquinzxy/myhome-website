@@ -64,12 +64,13 @@
           <div class="precio-selector selector">
             <label for="price-selector">Rango de precio</label>
             <select name="price-selector" id="price-select">
-              <option value="mvd">USD10000 - USD20000</option>
-              <option value="mvd">USD20000 - USD80000</option>
-              <option value="mvd">USD80000 - USD1500000</option>
+              <option value="[0,9999999]">Sin especificar</option>
+              <option value="[10000,20000]">USD10000 - USD20000</option>
+              <option value="[20000,80000]">USD20000 - USD80000</option>
+              <option value="[80000,1500000]">USD80000 - USD1500000</option>
             </select>
           </div>
-          <a href="#" class="squared-btn">BUSCAR</a>
+          <a href="#" class="squared-btn" id="filter-button">BUSCAR</a>
         </div>
       </main>
     </div>

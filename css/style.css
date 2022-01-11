@@ -192,6 +192,7 @@ aside .searchbox{
     flex-direction: column;
     justify-content: space-between;
     align-items:flex-start;
+    width: min-content;
     min-height: calc(100vh - 100px);
     box-shadow: rgba(9, 255, 0, 0) 0px 5px 15px;
     border-right: 1px solid rgba(175, 175, 175, 0.35);
@@ -254,6 +255,15 @@ aside .searchbox .selector{
     padding: 10px 10px 10px 0px;
     border: 0;
     font-size: 18px;
+}
+
+aside .price-selector.selector input{
+    padding: 10px 10px 10px 10px;
+    border: 0;
+    margin-top: 10px;
+    font-size: 18px;
+    background-color: rgb(241, 241, 241);
+    width: 100%;
 }
 
 .searchbox .selector select:focus-visible {
@@ -382,6 +392,26 @@ section.latest-section{
 
 section.latest-section>.button-container{
     padding-top: 70px;
+}
+
+.no-results{
+    width: 100%;
+    padding: 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.no-results h3{
+    font-size: 1.3em;
+}
+
+.no-results div{
+    margin-top: 50px;
+}
+
+.no-results div a{
+    cursor: pointer;
 }
 
 @media (max-width: 1024px) {

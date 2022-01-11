@@ -35,20 +35,32 @@ function getHouses(url){
 
 function printHouses(array, canva){
     canva.innerHTML = ""
-    array.forEach(house => {
-        canva.innerHTML += `
-        <a href='#' class="prop-card">
-            <div class="card-header">
-                <img src="${house.images[0]}" alt="">
-            </div>
-            <div class="card-footer">
-                <h4 class="hl-text">${priceFormat(house.price)}</h4>
-                <h3>${house.title}</h3>
-                <p>${house.desc}</p>
-            </div>
-        </a>
-        `
-    });
+    if(array.length>0){
+        array.forEach(house => {
+            canva.innerHTML += `
+            <a href='#' class="prop-card">
+                <div class="card-header">
+                    <img src="${house.images[0]}" alt="">
+                </div>
+                <div class="card-footer">
+                    <h4 class="hl-text">${priceFormat(house.price)}</h4>
+                    <h3>${house.title}</h3>
+                    <p>${house.desc}</p>
+                </div>
+            </a>
+            `
+        });
+    } else {
+       canva.innerHTML = `
+                <div class="no-results">
+                    <h3>Lo sentimos, no hay propiedades que coincidan con la búsqueda :(</h3>
+                    <div>
+                        <a class="squared-btn" id="reset-filter-btn">RESETEAR FILTRO</a>
+                    </div>
+                </div>
+            `
+    }
+
 }
 
 
