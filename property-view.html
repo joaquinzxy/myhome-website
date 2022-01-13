@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>MyHome - Casa</title>
+  </head>
+  <body>
+    <header>
+      <a class="mainLogo" href="#">
+        <img src="img/house.png" alt="" />
+        <h1>MY HOME</h1>
+      </a>
+      <nav id="main-nav" class="hidden">
+        <ul>
+          <li><a href="#" class="nav-btn">INICIO</a></li>
+          <li><a href="properties.html" class="nav-btn active">PROPIEDADES</a></li>
+          <li><a href="about.html" class="nav-btn">NOSOTROS</a></li>
+          <li><a href="contact.html" class="nav-btn">CONTACTO</a></li>
+        </ul>
+        <a href="#" class="whatsapp-btn">WHATSAPP</a>
+      </nav>
+      <div id="burger" class="burger-container">
+        <span class="line1"></span>
+        <span class="line2"></span>
+        <span class="line3"></span>
+      </div>
+    </header>
+    <section class="property-view-section">
+      <div class="property-main">
+        <div class="property-gallery" id="photo-gallery">
+          <img src="/img/property-thumb-1.jpg" alt="" id="main-img">
+          <div class="image-selector-group">
+            <a href="#" class="img-selector" data-imageURL="/img/property-thumb-1.jpg" ><img src="/img/property-thumb-1.jpg" alt=""></a>  
+            <a href="#" class="img-selector" data-imageURL="/img/property-thumb-2.jpg" ><img src="/img/property-thumb-2.jpg" alt=""></a>  
+            <a href="#" class="img-selector" data-imageURL="/img/property-thumb-3.jpg" ><img src="/img/property-thumb-3.jpg" alt=""></a>
+            <a href="#" class="img-selector" data-imageURL="/img/property-thumb-1.jpg" ><img src="/img/property-thumb-1.jpg" alt=""></a>  
+            <a href="#" class="img-selector" data-imageURL="/img/property-thumb-2.jpg" ><img src="/img/property-thumb-2.jpg" alt=""></a>  
+          </div>
+        </div>
+        <div class="property-data">
+          <div class="title">
+            <h2 id="property-title"></h2>
+            <h2><span class="hl-text" id="property-price"></span></h2>
+          </div>
+          <p id="property-desc"></p>
+          <div class="extra-data">
+            <h3>Información adicional:</h3>
+            <div class="extra-data-group">
+              <div class="extra-data-label">Baños:</div>
+              <div class="extra-data-info">2</div>
+            </div>
+            <div class="extra-data-group">
+              <div class="extra-data-label">Cuartos:</div>
+              <div class="extra-data-info">2</div>
+            </div>
+            <div class="extra-data-group">
+              <div class="extra-data-label">Tamaño:</div>
+              <div class="extra-data-info">150mt2</div>
+            </div>
+            <div class="extra-data-group">
+              <div class="extra-data-label">Lavanderia:</div>
+              <div class="extra-data-info">Si</div>
+            </div>
+            <div class="extra-data-group">
+              <div class="extra-data-label">Pisos:</div>
+              <div class="extra-data-info">1</div>
+            </div>
+            <div class="extra-data-group">
+              <div class="extra-data-label">Parrillero:</div>
+              <div class="extra-data-info">Si</div>
+            </div>
+            <div class="extra-data-group">
+              <div class="extra-data-label">Lavanderia:</div>
+              <div class="extra-data-info">Si</div>
+            </div>
+            <div class="extra-data-group">
+              <div class="extra-data-label">Pisos:</div>
+              <div class="extra-data-info">1</div>
+            </div>
+            <div class="extra-data-group">
+              <div class="extra-data-label">Parrillero:</div>
+              <div class="extra-data-info">Si</div>
+            </div>
+          </div>
+          <div>
+            <br>
+            <br>
+            <br>
+            <a href="#" class="squared-btn">COMPARTIR</a>
+            <a href="#" class="squared-btn">PEDIR INFORMACIÓN</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/init.js"></script>
+    <script src="js/property-view.js"></script>
+  </body>
+</html>

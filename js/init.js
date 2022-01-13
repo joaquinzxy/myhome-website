@@ -24,13 +24,16 @@ function getHouses(url){
     .then(response=>{
         return response.json().then(response=>{
             houses = response;
-            housesLocations = [...new Set(houses.map(house=>house.location))]
-            housesLocations.forEach(location => {
-                locationSelector.innerHTML+=`<option value="${strFormat(location)}">${location}</option>`
-            });
             return houses;
         })
     })
+}
+
+function setLocationsInSelect(houses){
+    housesLocations = [...new Set(houses.map(house=>house.location))]
+    housesLocations.forEach(location => {
+        locationSelector.innerHTML+=`<option value="${strFormat(location)}">${location}</option>`
+    });
 }
 
 function printHouses(array, canva){
@@ -38,7 +41,7 @@ function printHouses(array, canva){
     if(array.length>0){
         array.forEach(house => {
             canva.innerHTML += `
-            <a href='#' class="prop-card">
+            <a href='/property-view.html?showProperty&id=${house.id}' class="prop-card">
                 <div class="card-header">
                     <img src="${house.images[0]}" alt="">
                 </div>

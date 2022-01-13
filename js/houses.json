@@ -1,6 +1,6 @@
 [
     {
-        "id":"1",
+        "id":"0",
         "title":"Casa a cuadras de la playa",
         "price":"50000",
         "location":"Prado",
@@ -24,7 +24,7 @@
             "Parrillero": "true"}
     },
     {
-        "id":"2",
+        "id":"1",
         "title":"Casa a cuadras de la playa",
         "price":"180000",
         "location":"Buceo",
@@ -48,14 +48,14 @@
             "Parrillero": "true"}
     },
     {
-        "id":"3",
+        "id":"2",
         "title":"Casa a cuadras de la playa",
         "price":"80000",
         "location":"La Blanqueada",
         "category":"Casa",
         "highlight":"false",
         "desc":"Espectacular casa a pasos del mar. Cuenta en su interior con 2 dormitorios, uno de ellos en suite, 2 baños. Living comedor con cómoda cocina.",
-        "images":["img/property-thumb-1.jpg","","","",""],
+        "images":["img/property-thumb-1.jpg","img/property-thumb-2.jpg","img/property-thumb-3.jpg","img/property-thumb-2.jpg","img/property-thumb-1.jpg"],
         "rooms":"2",
         "bathrooms":"1",
         "size":"150",
@@ -72,7 +72,7 @@
             "Parrillero": "true"}
     },
     {
-        "id":"4",
+        "id":"3",
         "title":"Casa a cuadras de la playa",
         "price":"100000",
         "location":"Carrasco",
@@ -96,7 +96,7 @@
             "Parrillero": "true"}
     },
     {
-        "id":"5",
+        "id":"4",
         "title":"Casa a cuadras de la playa",
         "price":"120000",
         "location":"Buceo",

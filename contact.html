@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <title>MyHome - Nosotros</title>
+    <title>MyHome - Contacto</title>
   </head>
   <body>
     <header>
@@ -23,8 +23,8 @@
         <ul>
           <li><a href="#" class="nav-btn">INICIO</a></li>
           <li><a href="properties.html" class="nav-btn">PROPIEDADES</a></li>
-          <li><a href="about.html" class="nav-btn active">NOSOTROS</a></li>
-          <li><a href="contact.html" class="nav-btn">CONTACTO</a></li>
+          <li><a href="about.html" class="nav-btn">NOSOTROS</a></li>
+          <li><a href="contact.html" class="nav-btn active">CONTACTO</a></li>
         </ul>
         <a href="#" class="whatsapp-btn">WHATSAPP</a>
       </nav>
@@ -34,33 +34,23 @@
         <span class="line3"></span>
       </div>
     </header>
-    <section class="about-us">
-      <h1>Acerca de <span class="hl-text">MYHOME</span></h1>
+    <section class="contact-section">
+      <h1>Envianos un <span class="hl-text">mensaje</span></h1>
       <div class="underline-primary"></div>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas reiciendis quasi, corrupti molestias veritatis consequuntur saepe unde repellat sed reprehenderit ullam consectetur hic in voluptas atque iusto amet harum provident.</p>
-      <div class="team-about">
-        <div class="worker-card">
-          <img src="/img/worker-1.jpg" alt="">
-          <h3 class="worker-name">Peter Parker</h3>
-          <p>Lorem ipsum dolor.</p>
-        </div>
-        <div class="worker-card">
-          <img src="/img/worker-3.jpg" alt="">
-          <h3 class="worker-name">Peter Parker</h3>
-          <p>Lorem ipsum dolor.</p>
-        </div>
-        <div class="worker-card">
-          <img src="/img/worker-2.jpg" alt="">
-          <h3 class="worker-name">Peter Parker</h3>
-          <p>Lorem ipsum dolor.</p>
-        </div>
-        <div class="worker-card">
-          <img src="/img/worker-4.jpg" alt="">
-          <h3 class="worker-name">Peter Parker</h3>
-          <p>Lorem ipsum dolor.</p>
-        </div>
-      </div>
+      <form action="">
+          <label for="nameInput" id="nameLabel">Nombre</label>
+          <input type="text" name="nameInput" id="nameInput">
+          <label for="emailInput" id="emailLabel">Email</label>
+          <input type="email" email="emailInput" id="emailInput">
+          <label for="msgInput" id="msgLabel">Mensaje</label>
+          <textarea name="msgInput" id="msgInput" cols="30" rows="10"></textarea>
+          <div>
+            <a href="#" class="squared-btn">ENVIAR</a>
+          </div>
+      </form>
     </section>
     <script src="js/init.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>

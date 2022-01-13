@@ -107,7 +107,8 @@ filterToggleButton.addEventListener("click", function () {
 });
 
 document.addEventListener("DOMContentLoaded", async function () {
-  await getHouses(housesJson);
+  let houses = await getHouses(housesJson);
+  setLocationsInSelect(houses)
   showAllProperties();
   if (window.location.search) {
    getDataURL();

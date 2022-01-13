@@ -40,9 +40,10 @@ filterButton.addEventListener('click', function(){
 })
 
 document.addEventListener('DOMContentLoaded', async function(){
-    let casas = await getHouses(housesJson)
-    showFeatured(casas, featuredQuantity)
-    showLatest(casas, latestQuantity)
+    let houses = await getHouses(housesJson)
+    setLocationsInSelect(houses)
+    showFeatured(houses, featuredQuantity)
+    showLatest(houses, latestQuantity)
 })
 
 
