@@ -49,6 +49,17 @@ function printHouses(array, canva){
                     <h4 class="hl-text">${priceFormat(house.price)}</h4>
                     <h3>${house.title}</h3>
                     <p>${house.desc}</p>
+                    <div class="house-features">
+                        <div class="feature">
+                            <i class="fas fa-bed hl-text"></i> ${house.features.Cuartos}
+                        </div> 
+                        <div class="feature">
+                            <i class="fas fa-bath hl-text"></i> ${house.features.Baños}
+                        </div> 
+                        <div class="feature">
+                            <i class="fas fa-vector-square hl-text"></i> ${house.features.Tamaño}
+                        </div> 
+                    </div>
                 </div>
             </a>
             `

@@ -325,6 +325,17 @@ section .prop-card .card-footer>*{
     margin-top: 5px;
 }
 
+section .prop-card .card-footer .house-features{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+section .prop-card .card-footer .house-features .feature{
+    width: 30%;
+    text-align: center;
+}
+
 section .prop-card h4{
     font-size: 1.5em;
 }
