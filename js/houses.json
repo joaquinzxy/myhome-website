@@ -114,5 +114,28 @@
             "Garage": "Si",
             "Equipada": "Si",
             "Parrillero": "Si"}
+    },
+    {
+        "id":"5",
+        "title":"Casa con balcón",
+        "price":"12000",
+        "location":"La Teja",
+        "category":"Casa",
+        "highlight":"true",
+        "desc":"Espectacular casa a pasos del mar. Cuenta en su interior con 2 dormitorios, uno de ellos en suite, 2 baños. Living comedor con cómoda cocina.",
+        "images":["img/property-thumb-3.jpg","img/property-thumb-1.jpg","img/property-thumb-2.jpg","img/property-thumb-3.jpg","img/property-thumb-1.jpg"],
+        "rooms":"2",
+        "bathrooms":"1",
+        "size":"150",
+        "features":{
+            "Capacidad": "5",
+            "Plantas": "1",
+            "Tamaño": "50m²",
+            "Patio": "Si",
+            "Cuartos": "3",
+            "Baños": "1",
+            "Garage": "Si",
+            "Equipada": "Si",
+            "Parrillero": "No"}
     }
 ]
