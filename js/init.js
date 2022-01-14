@@ -41,7 +41,7 @@ function printHouses(array, canva){
     if(array.length>0){
         array.forEach(house => {
             canva.innerHTML += `
-            <a href='/property-view.html?showProperty&id=${house.id}' class="prop-card">
+            <a href='property-view.html?showProperty&id=${house.id}' class="prop-card">
                 <div class="card-header">
                     <img src="${house.images[0]}" alt="">
                 </div>
