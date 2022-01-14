@@ -728,6 +728,10 @@ div.property-main .property-data .extra-data .extra-data-group .extra-data-label
     section.how-it-works-section .icon-showcase .card-header .card-title{
         width: 75%;
     }
+
+    section.contact-section form {
+        width: 80%;
+    }
 }
 
 @media (max-width: 650px) {
