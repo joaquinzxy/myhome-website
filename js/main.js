@@ -6,11 +6,11 @@ function showFeatured(array, quantity){
     if(featuredHouses.length>quantity && quantity>0){
         featuredHouses = featuredHouses.slice(0, quantity)
     }
+    console.log("<<"+featuredHouses)
     printHouses(featuredHouses, featuredContainer)
 }
 
 function showLatest(array, quantity){
-    console.log(array)
     let latestHouses = []
     let housesLenght = array.length-1
     if(quantity>housesLenght){
