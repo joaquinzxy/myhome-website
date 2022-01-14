@@ -32,7 +32,7 @@ function dataToFilter(){
     let location = locationFilter.value;
     let category = typeFilter.value;
     let price = priceFilter.value;
-    window.location.href = `/properties.html?search&location=${location}&category=${category}&price=${price}&`;
+    window.location.href = `properties.html?search&location=${location}&category=${category}&price=${price}&`;
 }
 
 filterButton.addEventListener('click', function(){
